@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   constructor(
     private userService: UserService
   ) { 
+    console.log('Homepage loaded...')
   }
 
   ngOnInit() {
