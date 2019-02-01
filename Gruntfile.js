@@ -14,7 +14,7 @@ module.exports = function(grunt) {
                 cmd: `git commit -m ${message}`
             },
             push: {
-                cmd: `git push`
+                cmd: `git push origin master`
             }
         }
     });
