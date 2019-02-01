@@ -1,0 +1,12 @@
+
+<a routerLink="/about">
+  ABOUT
+</a>
+
+<p>
+  HOME PAGE
+</p>
+
+<p *ngFor="let user of users$ | async ; let i = index">
+  {{ user.name }} <b (click)="remove(i)" style="cursor: pointer">X</b>
+</p>

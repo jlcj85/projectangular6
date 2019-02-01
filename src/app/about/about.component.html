@@ -1,0 +1,12 @@
+
+<a routerLink="/">
+  HOME
+</a>
+
+<p>
+  ABOUT PAGE
+</p>
+
+<p *ngFor="let user of users$ | async">
+  {{ user.name }}
+</p>
