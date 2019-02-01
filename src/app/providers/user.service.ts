@@ -16,7 +16,7 @@ export class UserService {
   data$: Observable<any> = this.DataStore.asObservable();
 
   constructor(private httpClient: Http) {
-
+    console.log('Start service...')
   }
 
   loadUsers() {
