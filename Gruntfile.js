@@ -12,6 +12,9 @@ module.exports = function(grunt) {
             },
             commit: {
                 cmd: `git commit -m ${message}`
+            },
+            push: {
+                cmd: `git push`
             }
         }
     });
@@ -21,6 +24,7 @@ module.exports = function(grunt) {
     grunt.registerTask('gitpush', [
         'commands:status', 
         'commands:add', 
-        'commands:commit'
+        'commands:commit',
+        'commands:push'
     ]);
 }
